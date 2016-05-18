@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+.tile {
+  position: relative;
+  float:right;
+  width: 25%;
+  border: solid 2px white;
+}
+
+.tile img {
+  width: 100%;
+  display: block;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: 0.5s;
+}
+.tile.show img,
+.tile.lock img {
+  transform: rotateY(0deg);
+}
+.tile.show .back,
+.tile.lock .back {
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+.tile .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/logo.png) center center no-repeat #eee;
+}
+
+/*.show img {
+  opacity: 1;
+  transition: 500ms;
+}
+
+.lock img {
+  opacity: 1;
+}*/
+
+#turn {
+  margin: auto;
+  min-width: 20%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  font-size: 3em;
+}
+#message {
+  position: relative;
+  left: 100px;
+  min-width: 40%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  font-size: 3em;
+}
