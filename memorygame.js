@@ -30,7 +30,6 @@ $(function() {
     }
     if (state === 'on' && lastMonster === currentMonster) {
       $('.tile.show').addClass('lock');
-      $('.tile.show').addClass('lock')
       $('#message').text('You got a match!');
       matchCounter += 1;
     } else if (state === 'on') {
