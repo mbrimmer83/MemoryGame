@@ -11,6 +11,24 @@ body {
   width: 25%;
   border: solid 2px white;
 }
+.column-4 .tile {
+  position:relative;
+  float: right;
+  width: 25%;
+  border: solid 2px white;
+}
+.column-6 .tile {
+  position:relative;
+  float: right;
+  width: 16.66%;
+  border: solid 2px white;
+}
+.column-8 .tile {
+  position:relative;
+  float: right;
+  width: 12.5%;
+  border: solid 2px white;
+}
 
 .tile img {
   width: 100%;
