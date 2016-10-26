@@ -72,7 +72,7 @@ $(function() {
     if ($(this).hasClass('show')) {
       return;
     }
-    $(this).addClass('show')
+    $(this).addClass('show');
     $('#message').text("");
     clickCounter += 1;
     if (state === 'on') {
@@ -95,9 +95,9 @@ $(function() {
       matchCounter += 1;
     } else if (state === 'on') {
       var timeout = setTimeout(function() {
-        $('.tile').removeClass('show')
+        $('.tile').removeClass('show');
       }, 1000);
-      $('#message').text('Sorry, that is not a match!')
+      $('#message').text('Sorry, that is not a match!');
     }
     $('#turn').text('Turn: ' + moveCounter);
     if (matchCounter === levelNumber) {
