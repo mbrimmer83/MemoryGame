@@ -73,12 +73,3 @@ body {
   color: white;
   font-size: 3em;
 }
-
-.modalList {
-  display: inline-block;
-  margin-right: 50px;
-}
-
-.modalImg {
-  display: inline-block;
-}
